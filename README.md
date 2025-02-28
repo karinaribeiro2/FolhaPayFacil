@@ -8,7 +8,7 @@
 ## 🎯 Funcionalidade
 O usuário informa as seguintes informações para cada funcionário:
 
-- **0Código do FUncionário**
+- **Código do Funcionário**
 - **Número de Horas Trabalhadas no Mês**
 - **Turno de Trabalho** → (M - Matutino, V - Vespertino, N - Noturno)
 - **Categoria** → (F - Funcionário, G - Gerente)
