@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folha de Pagamento - Rede Hoteleira</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -16,11 +16,18 @@
             <label for="horas">Horas Trabalhadas no Mês:</label>
             <input type="number" id="horas" required>
 
-            <label for="turno">Turno de Trabalho (M - Matutino, V - Vespertino, N - Noturno):</label>
-            <input type="text" id="turno" maxlength="1" required>
+            <label for="turno">Turno de Trabalho:</label>
+            <select id="turno" required>
+                <option value="M">Matutino</option>
+                <option value="V">Vespertino</option>
+                <option value="N">Noturno</option>
+            </select>
 
-            <label for="categoria">Categoria (G - Gerente, F - Funcionário):</label>
-            <input type="text" id="categoria" maxlength="1" required>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" required>
+                <option value="G">Gerente</option>
+                <option value="F">Funcionário</option>
+            </select>
 
             <label for="salarioMinimo">Salário Mínimo Estadual:</label>
             <input type="number" id="salarioMinimo" required>
@@ -28,9 +35,7 @@
             <button type="submit">Calcular Salário</button>
         </form>
 
-        <div id="resultado">
-            <!-- Resultados serão exibidos aqui -->
-        </div>
+        <div id="resultado"></div>
     </div>
 
     <script src="script.js"></script>
